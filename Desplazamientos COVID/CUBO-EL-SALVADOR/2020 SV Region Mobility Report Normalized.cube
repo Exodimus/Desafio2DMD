@@ -1,0 +1,337 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6e9e0d31-79ff-45bc-a405-e3aa1a19df83" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>2020 SV Region Mobility Report Normalized</ID>
+  <Name>2020 SV Region Mobility Report Normalized</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source dwd:design-time-name="cf34ee08-bc0d-42e9-ab4f-bb89c44515b9">
+    <DataSourceViewID>2020 SV Region Mobility Report Normalized</DataSourceViewID>
+  </Source>
+  <Dimensions>
+    <Dimension dwd:design-time-name="b5c492e8-23f6-491d-8ed4-535a894a095d">
+      <ID>Data</ID>
+      <Name>Data</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="60201fa9-7209-456f-8b7d-7ce3fc5e03b6">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="20c93aab-ff78-43a8-ab09-9f8a14476f31">
+          <AttributeID>Metro Area - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="28b0d78b-98a7-44b1-bffc-ccd6a08545f7">
+          <AttributeID>Country - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e536996c-c011-4b17-bf68-34ba507bd674">
+          <AttributeID>Census FIPS - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f6bc1b0-15c4-4ed4-8da1-9ad3f4f8ef3e">
+          <AttributeID>Sub Region - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd2083f2-bb26-4cae-b96e-6b09ba4d8ca1">
+          <AttributeID>ISO3166 - Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ad31fd97-0f5d-4132-a8ce-f1698e875b32">
+      <ID>Metro Area</ID>
+      <Name>Metro Area</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0e606411-9006-48ba-88b2-d3a1ca6ea572">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1fab4ba1-1c3a-4e44-8cef-f04cdaac952a">
+          <AttributeID>Metro Area - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="560f7bdf-3eaf-4f1c-adfc-3d40e95ead9d">
+          <AttributeID>Country - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b48e085-b8f0-4706-a828-ec366f8d3cf7">
+          <AttributeID>Census FIPS - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="78248a4c-f1c1-4241-af3e-3693ba417877">
+          <AttributeID>Sub Region - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f9fa6ca6-2604-4b8a-8eaa-f697c4c16b0f">
+          <AttributeID>ISO3166 - Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="93c281d6-5a14-40f5-b5f1-3a1036a49bf9">
+      <ID>Census Fips</ID>
+      <Name>Census Fips</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="da33bc56-ca21-4116-9d7f-ab024489c845">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="88c2ce70-1281-4a7b-a02a-e0e3b5b30cb6">
+          <AttributeID>Metro Area - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d9dbc96c-9549-4b37-b625-f4b05107802f">
+          <AttributeID>Country - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="04009d1b-28d3-4820-afed-2aa0f0237e96">
+          <AttributeID>Census FIPS - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4939b73e-713e-4b09-b9ac-b9937ce4fb71">
+          <AttributeID>Sub Region - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e876386c-a355-4373-b8e7-b33302f2f1dd">
+          <AttributeID>ISO3166 - Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4748d8ac-d607-4a1b-ab8a-6b8d014cfa5d">
+      <ID>Sub Region</ID>
+      <Name>Sub Region</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="83566dc5-e14e-4102-965c-d800d5b59d3f">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="85917094-6f19-4daf-ba2b-69d5f24c7306">
+          <AttributeID>Metro Area - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ff690b12-353a-45be-aa40-d6eaa2b3a374">
+          <AttributeID>Country - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3db38442-5dd1-4253-b883-c4defb6c9331">
+          <AttributeID>Census FIPS - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57a2348a-2238-46a9-a95c-fd9c4ff29674">
+          <AttributeID>Sub Region - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d2606cfa-fe82-4ad4-862f-c771724154be">
+          <AttributeID>ISO3166 - Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7f79ed3d-b49d-463e-bff3-b0d3666db8ac">
+      <ID>Country</ID>
+      <Name>Country</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="626c9f51-dc01-4950-b849-d62b5dfa3539">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9a68cf61-77d6-4cbd-ac7e-f84a5da6b2ed">
+          <AttributeID>Metro Area - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4b69d402-1364-4b44-90bb-b118385c5d2d">
+          <AttributeID>Country - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="135c20af-695c-44b9-8a02-14628d24f509">
+          <AttributeID>Census FIPS - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="da4de18e-ca0a-4fe8-9133-111f7bf0dd98">
+          <AttributeID>Sub Region - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f135774a-c5fe-4726-b57f-7f9b452a6f79">
+          <AttributeID>ISO3166 - Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="400961cd-b5cf-4d82-8d70-ad15626c3d37">
+      <ID>Iso3166</ID>
+      <Name>Iso3166</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="93b72f53-478e-4471-9bf9-ed2b0c225448">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="db7002fe-c29c-4d0d-ae40-fae53f951e78">
+          <AttributeID>Metro Area - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f45e303e-ff89-4c61-8f0e-3595fce1d881">
+          <AttributeID>Country - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f83a8072-719f-4dcc-9f66-244b9fbd8d79">
+          <AttributeID>Census FIPS - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f12f571a-8273-47a7-beeb-04be79784f5d">
+          <AttributeID>Sub Region - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8ed02753-142d-4305-b5f1-01b5b257cf15">
+          <AttributeID>ISO3166 - Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="3b01f419-71fb-42ef-b870-7f531c56ddcc">
+      <ID>Data</ID>
+      <Name>Data</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="61e205ad-337f-405b-8ebc-a6aa7978e583">
+          <ID>Recuento Data</ID>
+          <Name>Recuento Data</Name>
+          <Source dwd:design-time-name="56488e1e-636f-4ac1-bd78-ad81ba0b13f0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="18e69075-02a8-4c6b-a82a-073803b5b747">
+              <TableID>dbo_Data</TableID>
+            </Source>
+          </Source>
+          <AggregateFunction>Count</AggregateFunction>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="15156131-7dd0-48dd-9e90-20845c210480">
+          <CubeDimensionID>Data</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9c4f6555-a31c-4443-9f2d-c8b907869f79">
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ac0a0854-14b0-4aa2-9bb5-caf55a584752">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f966bb00-476d-4110-9dbc-0dc885539d4d">
+                    <TableID>dbo_Data</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <AttributeID>Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="e4283d96-4371-494e-a29e-2fb96e821fc5">
+          <CubeDimensionID>Metro Area</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e87433ec-2c63-4dd4-bad3-f0545e00053b">
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="de0cc7f3-46bc-4cd5-bb72-ff9fea5470cf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c781688a-8c59-48d5-b25e-565e8b8c4b54">
+                    <TableID>dbo_Data</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <AttributeID>Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7529449e-cfaa-4e56-8add-27dd7a866cd3">
+          <CubeDimensionID>Census Fips</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f3b6cabe-dcea-462c-a9b9-6ebe2a117f9b">
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e1593acb-1a79-4af9-ae6b-9884e938bb47">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="36d1933a-0b7a-4c09-a435-51474d6577b6">
+                    <TableID>dbo_Data</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <AttributeID>Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1692a96e-4338-44c9-8a88-5004fb8caee9">
+          <CubeDimensionID>Sub Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0149186f-c148-472a-bce2-058568992510">
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4896bcba-4fae-4acf-94d6-00fad1966bef">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="18bf099d-e243-4a2f-8da3-5baefd5dcb39">
+                    <TableID>dbo_Data</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <AttributeID>Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="8df69dd5-c960-4889-84bb-4e60940f93f7">
+          <CubeDimensionID>Country</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="424690c6-11cf-4250-a8d8-3f5b80514202">
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3d7d3193-6424-4f76-a675-6bd70fa42318">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9736c6b8-ff71-4f7b-9a84-de7fe3b08c53">
+                    <TableID>dbo_Data</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <AttributeID>Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="2f29bc8d-abe8-405c-9aac-1b57dd6aea72">
+          <CubeDimensionID>Iso3166</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dcffe395-5420-4e2f-b41c-bdb68fea7010">
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d2b9db9a-137d-4ad7-80a0-596ebfd97ae2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7da73396-c90c-446e-93d8-598117ccc65f">
+                    <TableID>dbo_Data</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <AttributeID>Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

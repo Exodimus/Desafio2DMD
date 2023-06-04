@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-6B1J253.CovidMovilidad"
+  DTS:DTSID="{B6FBEF4A-6621-4F11-9A96-BBFDAFDBE495}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-6B1J253;Initial Catalog=CovidMovilidad;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-AnalisisMultidimensionalOLAP-{B6FBEF4A-6621-4F11-9A96-BBFDAFDBE495}DESKTOP-6B1J253.CovidMovilidad;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

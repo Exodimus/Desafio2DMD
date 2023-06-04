@@ -1,0 +1,263 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1ff5de25-7d49-4349-8206-39f3ff5fb49b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>2020 SV Region Mobility Report Normalized</ID>
+  <Name>2020 SV Region Mobility Report Normalized</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>2020 SV Region Mobility Report Normalized</DataSourceID>
+  <Schema>
+    <xs:schema id="_x0032_020_x0020_SV_x0020_Region_x0020_Mobility_x0020_Report_x0020_Normalized" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="_x0032_020_x0020_SV_x0020_Region_x0020_Mobility_x0020_Report_x0020_Normalized" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="28585835-84e0-493e-b8af-6b918e1c6626">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_CensusFIPS" msprop:DbTableName="CensusFIPS" msprop:FriendlyName="CensusFIPS" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="21f301c6-623c-4d4c-9565-f0f735b27719">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="e278cd94-c2d2-4628-800b-e6ed152468fa" type="xs:int" />
+                  <xs:element name="census_fips_code" msprop:FriendlyName="census_fips_code" msprop:DbColumnName="census_fips_code" msprop:design-time-name="3ba5892a-fdb5-46cd-8133-17621cb0e1f9">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="country_id" msprop:FriendlyName="country_id" msprop:DbColumnName="country_id" msprop:design-time-name="f5b7b094-9443-4fbb-b578-d62bb81e8599" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Country" msprop:DbTableName="Country" msprop:FriendlyName="Country" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f2b2f505-ea87-41da-a34a-6f11d43c684e">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="00654ee3-f975-4d85-a096-93793d9fdad5" type="xs:int" />
+                  <xs:element name="country_region_code" msprop:FriendlyName="country_region_code" msprop:DbColumnName="country_region_code" msprop:design-time-name="dd1eedc3-8f89-44fe-8e64-db7a4adf3d3a">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="country_region" msprop:FriendlyName="country_region" msprop:DbColumnName="country_region" msprop:design-time-name="fddfa328-586e-471d-8fc0-bdf011e4f379">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Data" msprop:DbTableName="Data" msprop:FriendlyName="Data" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="7c528676-d32c-4a42-bd63-0181d5bae411">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="a0daada5-3d26-4430-b8f8-4658f89d255c" type="xs:int" />
+                  <xs:element name="date" msprop:FriendlyName="date" msprop:DbColumnName="date" msprop:design-time-name="6f5abd45-0309-4a75-a08e-2942c614dba7">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="country_id" msprop:FriendlyName="country_id" msprop:DbColumnName="country_id" msprop:design-time-name="d4235050-93a9-4dbe-bbc6-dfabdd7905fb" type="xs:int" />
+                  <xs:element name="sub_region_id" msprop:FriendlyName="sub_region_id" msprop:DbColumnName="sub_region_id" msprop:design-time-name="e92dd4f7-a7da-4805-a198-36f90c3de72c" type="xs:int" />
+                  <xs:element name="metro_area_id" msprop:FriendlyName="metro_area_id" msprop:DbColumnName="metro_area_id" msprop:design-time-name="866ae401-6a18-4d91-bba5-40c4ff5a3399" type="xs:int" />
+                  <xs:element name="iso3166_id" msprop:FriendlyName="iso3166_id" msprop:DbColumnName="iso3166_id" msprop:design-time-name="d12dea49-4cab-403a-8fc5-1307f72cc9c1" type="xs:int" />
+                  <xs:element name="census_fips_id" msprop:FriendlyName="census_fips_id" msprop:DbColumnName="census_fips_id" msprop:design-time-name="a5593b8a-39cb-4364-84bd-c3333af58649" type="xs:int" />
+                  <xs:element name="retail_and_recreation_percent_change_from_baseline" msprop:FriendlyName="retail_and_recreation_percent_change_from_baseline" msprop:DbColumnName="retail_and_recreation_percent_change_from_baseline" msprop:design-time-name="5b493533-a9d0-47ba-83ec-0dac1a4ccd8d">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="grocery_and_pharmacy_percent_change_from_baseline" msprop:FriendlyName="grocery_and_pharmacy_percent_change_from_baseline" msprop:DbColumnName="grocery_and_pharmacy_percent_change_from_baseline" msprop:design-time-name="e7f72b25-b7eb-4ff2-a350-2f1cdae9429e">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="parks_percent_change_from_baseline" msprop:FriendlyName="parks_percent_change_from_baseline" msprop:DbColumnName="parks_percent_change_from_baseline" msprop:design-time-name="e9459a90-576c-4687-9c71-dcc1fef3ffa1">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="transit_stations_percent_change_from_baseline" msprop:FriendlyName="transit_stations_percent_change_from_baseline" msprop:DbColumnName="transit_stations_percent_change_from_baseline" msprop:design-time-name="5909f802-e004-4b13-a8f3-975b7924c5f8">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="workplaces_percent_change_from_baseline" msprop:FriendlyName="workplaces_percent_change_from_baseline" msprop:DbColumnName="workplaces_percent_change_from_baseline" msprop:design-time-name="e226b805-c63c-4920-bc8f-ab634193b3fc">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="residential_percent_change_from_baseline" msprop:FriendlyName="residential_percent_change_from_baseline" msprop:DbColumnName="residential_percent_change_from_baseline" msprop:design-time-name="38785987-9591-48ab-8392-f194b1460fd1">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ISO3166" msprop:DbTableName="ISO3166" msprop:FriendlyName="ISO3166" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="b6449cd5-f65f-418a-97b1-c7bf7efc32a9">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="79de5810-a455-4382-973e-994d38cc85ba" type="xs:int" />
+                  <xs:element name="iso_3166_2_code" msprop:FriendlyName="iso_3166_2_code" msprop:DbColumnName="iso_3166_2_code" msprop:design-time-name="5b00c459-27b8-4c6d-99c0-497959f9a8c3">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="country_id" msprop:FriendlyName="country_id" msprop:DbColumnName="country_id" msprop:design-time-name="76806d86-d2bb-4b56-a492-b3a57db15eaa" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MetroArea" msprop:DbTableName="MetroArea" msprop:FriendlyName="MetroArea" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="fccc0019-9817-45d4-b047-b60bad28ac0c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="9eaaf90b-e543-4088-b8f1-cc4b03b1d233" type="xs:int" />
+                  <xs:element name="metro_area" msprop:FriendlyName="metro_area" msprop:DbColumnName="metro_area" msprop:design-time-name="af9c810c-3e6b-4b27-81dc-7d70eda6ca3c">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="country_id" msprop:FriendlyName="country_id" msprop:DbColumnName="country_id" msprop:design-time-name="332912f3-4b3f-4a7a-ba74-be7288b7e4e7" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SubRegion" msprop:DbTableName="SubRegion" msprop:FriendlyName="SubRegion" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="fb49e610-82fe-446b-808e-4c1e6dc84c5f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="ec0d5dc6-bf65-4145-8d3f-66699baa8c8e" type="xs:int" />
+                  <xs:element name="country_id" msprop:FriendlyName="country_id" msprop:DbColumnName="country_id" msprop:design-time-name="466733f3-d744-4d67-aefd-36dbfa9c1bc9" type="xs:int" />
+                  <xs:element name="sub_region_1" msprop:FriendlyName="sub_region_1" msprop:DbColumnName="sub_region_1" msprop:design-time-name="52e1a2e4-577b-454d-b8b1-00fa4aed5f13">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sub_region_2" msprop:FriendlyName="sub_region_2" msprop:DbColumnName="sub_region_2" msprop:design-time-name="8bee64b9-c771-4ba4-8f51-a44818e1d9ee">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_CensusFIPS" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_Country_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Country" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_Data_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Data" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_ISO3166_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ISO3166" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_MetroArea_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_MetroArea" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_SubRegion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_SubRegion" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:keyref name="FK_SubRegion_Country" refer="dbo_Country_Constraint1">
+          <xs:selector xpath=".//dbo_SubRegion" />
+          <xs:field xpath="country_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_MetroArea_Country" refer="dbo_Country_Constraint1">
+          <xs:selector xpath=".//dbo_MetroArea" />
+          <xs:field xpath="country_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_ISO3166_Country" refer="dbo_Country_Constraint1">
+          <xs:selector xpath=".//dbo_ISO3166" />
+          <xs:field xpath="country_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Data_ISO3166" refer="dbo_ISO3166_Constraint1">
+          <xs:selector xpath=".//dbo_Data" />
+          <xs:field xpath="iso3166_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Data_Country" refer="dbo_Country_Constraint1">
+          <xs:selector xpath=".//dbo_Data" />
+          <xs:field xpath="country_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Data_SubRegion" refer="dbo_SubRegion_Constraint1">
+          <xs:selector xpath=".//dbo_Data" />
+          <xs:field xpath="sub_region_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Data_CensusFIPS" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Data" />
+          <xs:field xpath="census_fips_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Data_MetroArea" refer="dbo_MetroArea_Constraint1">
+          <xs:selector xpath=".//dbo_Data" />
+          <xs:field xpath="metro_area_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_CensusFIPS_Country" refer="dbo_Country_Constraint1">
+          <xs:selector xpath=".//dbo_CensusFIPS" />
+          <xs:field xpath="country_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <_x0032_020_x0020_SV_x0020_Region_x0020_Mobility_x0020_Report_x0020_Normalized xmlns="" />
+  </Schema>
+</DataSourceView>

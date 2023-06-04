@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33328.57
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "AnalisisMultidimensionalOLAP", "AnalisisMultidimensionalOLAP\AnalisisMultidimensionalOLAP.dtproj", "{65EB9DA3-68C1-4443-8601-76E1452951A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65EB9DA3-68C1-4443-8601-76E1452951A0}.Development|Default.ActiveCfg = Development
+		{65EB9DA3-68C1-4443-8601-76E1452951A0}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94616A0A-3593-4FD5-8CF0-AA909D4DBFC4}
+	EndGlobalSection
+EndGlobal

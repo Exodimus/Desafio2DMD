@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Northwind Data Mart</Id>
+            <Name>Northwind Data Mart</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZocywtM3vEegn/bdkKWrVAAAAAAoAAAATgBvAHIAdABoAHcAaQBuAGQAIABEAGEAdABhACAATQBhAHIAdAAAABBmAAAAAQAAIAAAAPkTF9iAvBGENxEptrevdhpKo/P5q/ToVo5PWaf34E/QAAAAAA6AAAAAAgAAIAAAAK8Dx4cxlqX3k2FBmmoSUaz9L3uA0+wDNSzU5yMyDYxzEAAAAJC7PiIv39cTN4vkR2Np9BFAAAAAq8l1GNGF+aJYB7OkUewFpLTZZYheR16q5D6roCKMDlTV7CXpVGCXScmp50y9kAjHV4ztRbJ7AFlsO/+L9ReYNw==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Northwind Data Mart</Id>
+            <Name>Northwind Data Mart</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZocywtM3vEegn/bdkKWrVAAAAAAoAAAATgBvAHIAdABoAHcAaQBuAGQAIABEAGEAdABhACAATQBhAHIAdAAAABBmAAAAAQAAIAAAAAfzd1eb1gYL4e2Ov95zMQ1B4EZs8DRPSJZuqJr9uZlcAAAAAA6AAAAAAgAAIAAAAFqvSKkBFJrSAdn1BZizi2AQjVXQTlRCHG1DBaWmMAD6EAAAADfB17BKd4W7TPplp+ohyi5AAAAAvA0USu/qxa/mVDdFEbqK+6oqd5e3Onc4GsLNrfuA9zFGAfMSyrfcLGUO8VxsI2jN73R+hPGgC3MzAXwUPaj6Tw==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>DESKTOP-PLUI6OK\DATAWAREHOSE</TargetServer>
+        <TargetDatabase>NorthwindCubeOLAP</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>
